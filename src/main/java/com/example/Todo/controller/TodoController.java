@@ -10,10 +10,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1/todo-app")
 public class TodoController {
-    @RequestMapping("/api/username/{username}")
-    public String helloUser(@PathVariable String username) {
-        return "hello " + username;
-    }
     private final TodoService todoService;
 
     public TodoController(TodoService todoService) {
